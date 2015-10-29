@@ -8,8 +8,9 @@ var Translator = (function (translator) {
 		"merry": "feliz",
 		"christmas": "navidad",
 		"and": "y",
-		"happy": "nuevo",
-		"year": "año",
+		"happy": "feliz",
+		"new": "nuevo",
+		"year": "año"
 	};
 
 	//dictionary 
