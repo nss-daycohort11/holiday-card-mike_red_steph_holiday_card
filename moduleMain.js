@@ -1,11 +1,3 @@
-var Translator = (function () {
-	//Private
-
-	//public
-	return {
-		
-	}
-
-})();
+var Translator = {};
 
 console.log("Translator", Translator);
