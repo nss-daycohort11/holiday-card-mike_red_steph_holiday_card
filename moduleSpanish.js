@@ -2,7 +2,6 @@ var Translator = (function (translator) {
 	//user input text
 	var input = [];
 	//dictionary output text
-	var output = [];
 	//dictionary keys with values
 	var spanishLexicon = {
 		"merry": "feliz",
@@ -16,6 +15,7 @@ var Translator = (function (translator) {
 	//dictionary 
 	translator.spanishTranslate = function (text) {
 		input = text.split(" "); 
+		var output = [];
 		console.log(input);
 		//looping the text input from the user to find matching keys
 		for (var i = 0; i < input.length; i++) {

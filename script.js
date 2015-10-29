@@ -4,56 +4,16 @@ $(document).ready(function(){
 		var englishString = $("#input-text").val();
 			englishString = englishString.toLowerCase();
 		if ($("select option:selected").val() === "spanish") {
-			// Translator.spanishTranslate(englishString);
-			// console.log("spanish works");
+			$("#output").html(Translator.spanishTranslate(englishString));
+			console.log(englishString);
 		}
 		if ($("select option:selected").val() === "finnish") {
-			// console.log(englishString);
-
 			$("#output").html(Translator.toFinnish(englishString));
-
+			console.log(englishString);
 		}
 		if ($("select option:selected").val() === "swahili") {
-			console.log("swahili works");
+			$("#output").html(Translator.toSwahili(englishString));
+			console.log(englishString);
 		}
-
-		
-
-
-
-
 	})
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 });

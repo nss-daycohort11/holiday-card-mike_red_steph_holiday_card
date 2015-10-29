@@ -8,11 +8,11 @@ var Translator = (function () {
 		"year": "vuosi"
 		};
 	var input = [];
-	var output = [];
 
 	return {
 		toFinnish: function (text) {
 			input = text.split(" "); 
+			var output = [];
 			
 			for (var i = 0; i < input.length; i++ ) {
 				var englishWord = input[i];
@@ -25,8 +25,8 @@ var Translator = (function () {
 		};
 })();
 
-// var testText = "merry christmas and happy new year";
+var testText = "merry christmas and happy new year";
 
-// console.log("TESTING", Translator.toFinnish(testText));
+console.log("TESTING", Translator.toFinnish(testText));
 
 

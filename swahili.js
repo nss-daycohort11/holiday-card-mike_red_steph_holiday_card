@@ -1,7 +1,6 @@
 var Translator = (function (translator) {
 
 	var input = [];
-	var output = [];
 	var swahili = {
 		"merry": "sherehe",
 		"christmas": "Krismasi",
@@ -13,17 +12,19 @@ var Translator = (function (translator) {
 
 	translator.toSwahili = function (text) {
 		input = text.split(" ");
+		var output = [];
 		console.log(input);
-			for (var i = 0;i < input.length; i++){
+			for (var i = 0; i < input.length; i++){
 				var englishWord	= input[i];
 				var swahiliOut = swahili[englishWord];
 				output.push(swahiliOut);
 				// console.log(input[i]);
 				// console.log(output);
+			}
 				var textOutput = output.join(" ");
 				return textOutput;
-			}
-	}
+			
+	};
 
   return translator;
 
